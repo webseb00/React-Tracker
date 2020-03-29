@@ -1,0 +1,22 @@
+
+body {
+    background: #ecf0f1;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #95a5a6;
+}
+
+.list-group {
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li svg,
+.btn-info {
+    margin-right: 10px;
+}

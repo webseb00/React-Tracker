@@ -12,7 +12,8 @@ function rootReducer(state = initialState, action) {
             const notDeletedItems = state.items.filter(item => item.id !== action.id);
             return Object.assign({}, state, {items: [...notDeletedItems]});
         case CLOSED_ITEM: 
-            console.log(action.id);
+            const closedItem = state.items.filter(item => (item.id === action.id) ? {item: item.status = false} : item);
+            return Object.assign({}, state, {items: [...closedItem]});
         default:
             return state;
     }
